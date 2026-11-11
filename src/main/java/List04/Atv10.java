@@ -21,6 +21,7 @@ public class Atv10 {
             double mulltItem = 0;
             double somaTotal = 0;
             double desconto = 0;
+            double valorFinal = 0;
 
             for (int i = 0; i < n; i++) {
 
@@ -48,23 +49,19 @@ public class Atv10 {
 
             if (somaTotal > 200) {
 
-                desconto = somaTotal - (somaTotal * 0.05);
+                desconto = somaTotal * 0.05;
 
-                System.out.println();
-                System.out.println("======================Total====================");
-                System.out.println();
-
-                System.out.printf("Total com desconto: R$ %.2f", desconto);
-
-            } else {
-
-                System.out.println();
-                System.out.println("======================Total====================");
-                System.out.println();
-
-                System.out.printf("Total sem desconto: R$ %.2f", somaTotal);
             }
 
+            valorFinal = somaTotal - desconto;
+
+            System.out.println();
+            System.out.println("======================Total====================");
+            System.out.println();
+
+            System.out.printf("Total da compra: R$ %.2f%n", somaTotal);
+            System.out.printf("Desconto: R$ %.2f%n", desconto);
+            System.out.printf("Valor final a pagar: R$ %.2f%n", valorFinal);
 
         }
         sc.close();
