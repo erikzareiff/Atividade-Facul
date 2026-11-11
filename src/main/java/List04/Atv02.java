@@ -15,7 +15,7 @@ public class Atv02 {
 
         for (int i = 0; i < precos.length; i++) {
 
-            System.out.printf("Preço %d: R$ %.2f%n", i + 1, precos[i]);
+            System.out.printf("Produto %d: R$ %.2f%n", i + 1, precos[i]);
 
         }
         sc.close();
