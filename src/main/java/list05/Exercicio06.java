@@ -1,7 +1,5 @@
 package list05;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Scanner;
 
 public class Exercicio06 {
