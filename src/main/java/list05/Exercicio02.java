@@ -38,7 +38,7 @@ public class Exercicio02 {
 
             String classificacao = classificarImc(imc);
 
-            System.out.printf("Pessoa %d: IMC %.2f %s%n", i + 1, imc, classificacao);
+            System.out.printf("Pessoa %d: IMC %.2f - %s%n", i + 1, imc, classificacao);
 
             System.out.println();
 
